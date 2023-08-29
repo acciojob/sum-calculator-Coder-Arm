@@ -6,7 +6,7 @@ const App = () => {
   const [sum , setSum] = useState(0);
   
   function handleSum(e){
-    const input = Number(e.target.value)
+    const input = parseFloat(e.target.value)
     setSum((prevSum) => prevSum+input)
   }
   return (
